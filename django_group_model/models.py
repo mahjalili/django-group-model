@@ -18,6 +18,7 @@ class AbstractGroup(models.Model):
         verbose_name=_("permissions"),
         blank=True,
         related_name=permissions_related_name,
+        related_query_name="group",
     )
 
     objects = GroupManager()
